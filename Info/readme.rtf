@@ -1,0 +1,64 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww13900\viewh16200\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 *** INHOUD ***\
+\
+ARDUINO\
+   pingfirmata.ino  => Code voor op de Arduino\
+\
+BROWSER\
+   browser_controlled_hcsr04s.html  => Voorbeeldpagina voor data van hcsr04 sensor van Arduino\
+   browser_controlled_LEDs.html  => Voorbeeldpagina voor data van leds van Arduino\
+   CSS\
+      main.css  => Beetje opmaak voor de pagina\
+   JQUERY\
+      JQuery files for graphics design and query code\
+   JS\
+      bc_LEDs_client.js  => Code om data van Node.js uit te lezen en te visualiseren\
+      bc_hcsr04_client.js  => Code om data van Node.js uit te lezen en te visualiseren\
+   NODE JS\
+      browser_controlled_LEDs_server.js    => Node.js code om de Arduino uit te lezen en de data naar de browser te sturen\
+      browser_controlled_hcsr04_server.js  => Node.js code om de Arduino uit te lezen en de data naar de browser te sturen\
+\
+\
+*** HARDWARE ***\
+Arduino Uno\
+Usb kabel van Arduino naar computer\
+2 X 220 Ohm weerstand, rode en groene LED\
+Vier draadjes tussen breadboard en Arduino\
+\
+\
+*** INSTALLATIE ***\
+Download de Arduino omgeving op http://arduino.cc\
+Installeer de PingFirmata op de Arduino (compileren en uploaden)\
+\
+Bouw het schema op, volgens bijgeleverde afbeelding (browser_controlled_LEDs.png).\
+\
+Download Node.js installer via nodejs.org\
+Installeer Node.js\
+\
+Open command/terminal\
+Installeer Johnny Five met commando: npm install johnny-five\
+Installeer socket.io met commando: npm install socket.io\
+\
+Kopieer de inhoud van de map browser naar een webserver omgeving (XAMP)\
+\
+*** WEBSITES ***\
+http://arduino.cc\
+https://github.com/rwaldron/johnny-five\
+http://socket.io\
+\
+\
+*** STARTEN ***\
+Open command/terminal\
+Blader naar de directory waar de code browser_controlled_LEDs_server.js staat\
+Start de server code met commando: node browser_controlled_LEDs_server.js\
+In de command/terminal geeft de code connected aan als er een goede verbinding is\
+\
+Open de browser en start de pagina browser_controlled_LEDs.html\
+Je ziet nu de visualisatie van de LED\'92s op het breadboard.\
+\
+}

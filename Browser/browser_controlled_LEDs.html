@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+        <meta charset="UTF-8">
+		<title>S3 Arduino - Browser controlled LED's</title>
+		
+		<script type="text/javascript" src="jquery/jquery-1.7.2.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+        <!-- <script src="http://localhost/socket.io.js"></script> -->
+        
+		<link href="css/bc_LEDs.css" rel="stylesheet">
+		<style>
+        .circle
+        {
+            width: 14px;
+            height: 14px;
+            border-radius: 7px;
+            border: 1px solid #000;
+            display: inline-block;
+            float: right;
+        }
+            
+        .groen
+        {
+            background-color: #080;
+        }
+            
+        .rood
+        {
+            background-color: #800;
+        }
+        </style>
+	</head>
+
+	<body>
+ 		<div id="main">
+		    <form>
+                <fieldset>
+                    <legend>Lampen:</legend>
+                    <input type="checkbox" name="lampen" value="groen" id="groen"> <label for="groen">Groene LED</label><div class="circle"></div><br>
+                    <input type="checkbox" name="lampen" value="rood" id="rood"> <label for="rood">Rode LED</label><div class="circle"></div>
+		        </fieldset>  
+		    </form>
+		</div>
+		
+        <script src="js/bc_LEDs_client.js"></script>
+	</body>
+
+</html>
